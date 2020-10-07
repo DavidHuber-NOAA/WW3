@@ -88,6 +88,7 @@
 
   # linking options
   opt="-o $prog -g -xhost -O3 -xhost"
+  # opt="-o $prog -g -O2 -xCore-AVX512 -qopt-zmm-usage=high -march=skylake-avx51"
 
   # oasis coupler archive
   if [ "$prog" = 'ww3_shel' ] || [ "$prog" = 'ww3_multi' ] || [ "$prog" = 'ww3_sbs1' ] ||  \
@@ -111,7 +112,6 @@
     libs="$libs ${G2_LIB4} ${W3NCO_LIB4} ${BACIO_LIB4} ${JASPER_LIB} ${PNG_LIB} ${Z_LIB}"
   fi
 
-  set -x
   # netcdf library dir
   if [ "$netcdf_compile" = 'yes' ] ; then
     case $WWATCH3_NETCDF in
