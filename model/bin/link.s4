@@ -87,7 +87,7 @@
   fi
 
   # linking options
-  opt="-o $prog -g -O2 -xCore-AVX512 -qopt-zmm-usage=high -march=skylake-avx51"
+  opt="-o $prog -g -O3 -xCore-AVX512 -qopt-zmm-usage=high -march=skylake-avx51"
 
   # oasis coupler archive
   if [ "$prog" = 'ww3_shel' ] || [ "$prog" = 'ww3_multi' ] || [ "$prog" = 'ww3_sbs1' ] ||  \

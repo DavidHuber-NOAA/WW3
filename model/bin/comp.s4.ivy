@@ -68,7 +68,7 @@
   fi
 
   # compilation options
-  opt="-c -module $path_m -no-fma -ip -g -i4 -real-size 32 -fp-model precise -assume byterecl -convert big_endian -fno-alias -fno-fnalias -sox -march=ivybridge -O2"
+  opt="-c -module $path_m -no-fma -ip -g -i4 -real-size 32 -fp-model precise -assume byterecl -convert big_endian -fno-alias -fno-fnalias -sox -march=ivybridge -O3"
 
   # oasis coupler include dir
   if [ "$oasis_mod" = 'yes' ]

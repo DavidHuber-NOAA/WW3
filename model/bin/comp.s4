@@ -68,7 +68,7 @@
   fi
 
   # compilation options
-  opt="-c -module $path_m -no-fma -ip -g -i4 -real-size 32 -fp-model precise -assume byterecl -convert big_endian -fno-alias -fno-fnalias -sox -xCore-AVX512 -qopt-zmm-usage=high -march=skylake-avx512 -O2"
+  opt="-c -module $path_m -no-fma -ip -g -i4 -real-size 32 -fp-model precise -assume byterecl -convert big_endian -fno-alias -fno-fnalias -sox -xCore-AVX512 -qopt-zmm-usage=high -march=skylake-avx512 -O3"
 
   # oasis coupler include dir
   if [ "$oasis_mod" = 'yes' ]

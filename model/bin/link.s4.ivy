@@ -87,7 +87,7 @@
   fi
 
   # linking options
-  opt="-o $prog -g -O2 -march=ivybridge"
+  opt="-o $prog -g -O3 -march=ivybridge"
 
   # oasis coupler archive
   if [ "$prog" = 'ww3_shel' ] || [ "$prog" = 'ww3_multi' ] || [ "$prog" = 'ww3_sbs1' ] ||  \
